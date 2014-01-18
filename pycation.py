@@ -1,9 +1,9 @@
 # Let's compute hotel_cost
 def hotel_cost(nights):
-    cost = 140 * nights
-    return cost
-### check block ###
-# print hotel_cost()
+    if nights >= 1:
+        return nights*40
+    else:
+        "Incorrect value"
 
 # Let's compute plane ride cost
 def plane_ride_cost(city):
@@ -17,26 +17,16 @@ def plane_ride_cost(city):
         return 475
     else:
         return "I'm totally don't understand you"
-### check block ###
-# print plane_ride_cost("Charlotte")
 
 # Let's compute rental_car_cost
 def rental_car_cost(days):
-    rrc = days * 40
     if days >= 3 and days < 7:
-        return rrc - 20
+        return (days*40) - 20
     elif days >=7:
-        return rrc - 50
+        return (days*40) - 50
     else:
-        return rrc
-### check block ###             
-#print rental_car_cost(7)
+        return (days*40)
 
-
-
-# check block
-#def new_function(nights,city):
-# summ = hotel_cost(nights) + plane_ride_cost(city)
-# return summ
-#
-# print new_function(2,"Tampa")
+# Let's bring them all together
+def trip_cost(city,days):
+    return plane_ride_cost(city) + rental_car_cost(days)
