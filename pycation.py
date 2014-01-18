@@ -29,4 +29,6 @@ def rental_car_cost(days):
 
 # Let's bring them all together
 def trip_cost(city,days,spending_money):
-    return plane_ride_cost(city) + rental_car_cost(days)
+    return plane_ride_cost(city) + rental_car_cost(days) - spending_money
+print trip_cost("Los Angeles",5,600)
+  
