@@ -2,7 +2,7 @@
 def hotel_cost(nights):
     cost = 140 * nights
     return cost
-# check block
+### check block ###
 # print hotel_cost()
 
 # Let's compute plane ride cost
@@ -17,6 +17,8 @@ def plane_ride_cost(city):
         return 475
     else:
         return "I'm totally don't understand you"
+### check block ###
+# print plane_ride_cost("Charlotte")
 
 # Let's compute rental_car_cost
 def rental_car_cost(days):
@@ -27,7 +29,7 @@ def rental_car_cost(days):
         return rrc - 50
     else:
         return rrc
-#Check block                
+### check block ###             
 #print rental_car_cost(7)
 
 
